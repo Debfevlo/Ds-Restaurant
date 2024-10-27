@@ -6,7 +6,29 @@ export default {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        primary:"#F0BA56",
+        secondary:"#FBEAC9",
+        brown2:"#877169",
+      },
+
+      fontFamily:{
+        poppins:["Poppins", "sans-serif"],
+        leagueGothic:["League Gothic", "sans-serif"],
+      },
+
+      container:{
+        center:true,
+        padding:{
+          Default:"1rem",
+          sm:"2rem",
+          lg:"4rem",
+          xl:"5rem",
+          "2xl":"6rem",
+        },
+      },
+    },
   },
   plugins: [],
 }
