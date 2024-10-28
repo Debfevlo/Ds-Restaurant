@@ -108,7 +108,7 @@ const Navbar = () => {
                 </div>
 
                 
-                <button className='px-4 py-2 rounded-full text-white bg-primary hover:scale-105'>Reserve Table</button>
+                <button className='btn-primary'>Reserve Table</button>
                 
             </motion.div>
             </div>

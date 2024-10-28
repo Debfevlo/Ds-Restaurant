@@ -3,3 +3,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .btn-primary{
+        @apply px-4 py-2 text-black bg-primary rounded-full hover:scale-110 hover:text-white
+    }
+
+    .btn-secondary{
+        @apply px-4 py-2 border-2 rounded-full border-primary hover:scale-105
+    }
+}
+
+@layer utilities{
+    .img-shadow{
+        filter: drop-shadow(-6px 6px 10px rgba(0,0,0,0.4));
+    }
+}
