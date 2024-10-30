@@ -12,6 +12,8 @@
     .btn-secondary{
         @apply px-4 py-2 border-2 rounded-full border-primary hover:scale-105
     }
+
+    
 }
 
 @layer utilities{
