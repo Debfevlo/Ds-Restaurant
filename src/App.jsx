@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from "./Components/Navbar/Navbar";
 import Landing from './Components/Landing/Landing';
-import Dishes from "./Components/Popular-Dishes/Dishes"
+import Dishes from "./Components/Popular-Dishes/Dishes";
+import AboutUs from "./Components/AboutUs/AboutUs";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar/>
       <Landing/>
       <Dishes/>
+      <AboutUs/>
     </div>
   )
 }

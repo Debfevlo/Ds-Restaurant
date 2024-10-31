@@ -151,22 +151,28 @@ const Dishes = () => {
     }
   return (
     <section>
-        <div className="container">
+        <div className="container min-h-[430px]">
             <h3 className='text-3xl font-bold text-center sm:text-left mt-16 sm:mt-0 mb-4'>Popular dishes</h3>
             <Slider {...settings}> 
                 {
                     DishMenu.map((menu)=>{
                         return(
                             <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 group place-items-center items-center text-center shadow-md p-3' key={menu.id}>
+
+                                {/*image section */}
                                 <img src={menu.img} alt="" className='w-32 rounded-full img-shadow group-hover:scale-125 transition-all duration-700 group-hover:rotate-[50deg]'/>
+
+                                {/* text section */}
                                 <div className='space-y-2 mt-2'>
                                     <h3 className='font-bold text-brown2'>{menu.name}</h3>
                                     <span className='text-yellow-500 flex justify-center items-center'>{menu.rating}{menu.rating}{menu.rating}{menu.rating}</span>
                                     <p>{menu.description}</p>
                                 </div>
+
+                                {/* button section */}
                                 <div className='flex gap-3 items-center space-y-2 justify-center'>
                                     <p className='text-brown2 font-semibold'>{menu.price}</p>
-                                    <button className='border-2 text-sm rounded-full border-primary px-1 py-1 group-hover:scale-105'>{menu.button}</button>
+                                    <button className='border-2 text-sm rounded-full border-primary px-1 py-1 group-hover:btn-primary'>{menu.button}</button>
                                 </div>
                             </div>
                         )

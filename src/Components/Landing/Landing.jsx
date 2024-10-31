@@ -8,7 +8,7 @@ import { IoFastFood } from "react-icons/io5";
 import { FaBowlFood } from "react-icons/fa6";
 import  {motion} from 'framer-motion';
 
-const SlideUp = (delay) =>{
+export const SlideUp = (delay) =>{
     return{
         initial:{
             y:"100%",
