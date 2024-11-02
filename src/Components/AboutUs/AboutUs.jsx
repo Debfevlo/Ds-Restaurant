@@ -49,7 +49,7 @@ const AboutUs = () => {
               variants={SlideUp(1)}
               initial="initial"
               whileInView="animate"
-              className='text-3xl  text-center font-leagueGothic'>We Are More Than Multiple Service</motion.h3>
+              className='text-5xl  text-center font-leagueGothic'>We Have More Than Multiple Service</motion.h3>
               <motion.p 
               variants={SlideUp(1.3)}
               initial="initial"

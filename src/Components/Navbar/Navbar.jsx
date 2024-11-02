@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "../../assets/images/logo2.png";
+import Logo from "../../assets/images/logo.png";
 import { GoGift } from "react-icons/go";
 import {motion} from 'framer-motion';
 const NavMenu =[

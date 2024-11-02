@@ -37,7 +37,7 @@ const Landing = () => {
                 variants={SlideUp(0.5)}
                 initial="initial"
                 whileInView="animate"
-                className='text-3xl font-bold '>We Serve The Taste You Love 😍</motion.h1>
+                className='text-5xl font-leagueGothic '>We Serve The Taste You Love 😍</motion.h1>
                 <motion.p 
                 variants={SlideUp(1)}
                 initial="initial"
