@@ -83,7 +83,8 @@ const Testimonials = () => {
 
     }
   return (
-    <div className='container min-h-[450px] py-16 md:py-0'>
+    <section>
+        <div className='container min-h-[450px] py-16 md:py-0'>
         {/*title section */}
         <h3 className='text-3xl font-bold text-center sm:text-left sm:mt-12'>What Our Customer Says?</h3>
 
@@ -115,6 +116,8 @@ const Testimonials = () => {
             </Slider>
         </div>
     </div>
+    </section>
+    
   )
 }
 

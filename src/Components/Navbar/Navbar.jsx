@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from "../../assets/images/logo.png";
 import { GoGift } from "react-icons/go";
 import {motion} from 'framer-motion';
-const NavMenu =[
+import { IoMdMenu } from "react-icons/io";
+import ResponsiveMenu from "../ResponsiveMenu/ResponsiveMenu"
+
+export const NavMenu =[
     {
         id:1,
         name:"Home",
@@ -64,8 +67,10 @@ const SlideDown = (delay) =>{
 };
 
 const Navbar = () => {
+const [open, setOpen] = useState(false)
   return (
-    <nav>
+    <>
+<nav>
         <div className="container flex justify-between items-center">
             {/* Logo section */}
                 <motion.img 
@@ -113,9 +118,18 @@ const Navbar = () => {
             </motion.div>
             </div>
             
-
+            {/* mobile hamburger menu section */}
+            
+            <div className='sm:hidden' onClick={() => setOpen(!open)}>
+                <IoMdMenu className='text-4xl'/>
+            </div>
         </div>
     </nav>
+
+    {/* Mobile sidebar section */}
+    <ResponsiveMenu open={open}/>
+    </>
+    
   )
 }
 

@@ -150,7 +150,10 @@ const Dishes = () => {
 
     }
   return (
+    <>
+
     <section>
+        <span id='menu'></span>
         <div className="container min-h-[430px]">
             <h3 className='text-3xl font-bold text-center sm:text-left mt-16 sm:mt-0 mb-4'>Popular dishes</h3>
             <Slider {...settings}> 
@@ -181,6 +184,8 @@ const Dishes = () => {
             </Slider>
         </div>
     </section>
+    </>
+    
   )
 }
 

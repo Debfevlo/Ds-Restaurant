@@ -6,6 +6,7 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import Playstore from "./Components/Playstore/Playstore";
 import Chefs from "./Components/Chefs/Chefs";
+import Footer from "./Components/Footer/Footer"
 const App = () => {
   return (
     <div className='overflow-hidden bg-[#FFFCF7]'>
@@ -16,6 +17,7 @@ const App = () => {
       <Testimonials/>
       <Chefs/>
       <Playstore/>
+      <Footer/>
     </div>
   )
 }

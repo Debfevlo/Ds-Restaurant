@@ -46,7 +46,7 @@ const Playstore = () => {
             <img src={Phone} alt="A plate of food" className='w-[600px] img-shadow relative' />
           </motion.div>
           <div 
-              className='block md:hidden'>
+              className='block md:hidden mb-8'>
               <button className='btn-primary'>Download Now</button>
             </div>
         </div>

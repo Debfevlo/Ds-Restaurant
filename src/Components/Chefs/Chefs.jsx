@@ -10,31 +10,31 @@ const ChefData = [
         id: 1,
         img: chef1,
         name: "John Williams",
-        delay:0.4,
+        
     },
     {
         id: 2,
         img: chef2,
         name: "Debbie Antonio",
-        delay:0.8,
+    
     },
     {
         id: 3,
         img: chef2,
         name: "Dorothy Fevlo",
-        delay:1.2,
     },
     {
         id: 4,
         img: chef1,
         name: "Jules Charles",
-        delay:1.4,
+
     },
 ]
 
 const Chefs = () => {
     return (
-        <div className="container min-h-[500px]">
+        <section>
+            <div className="container min-h-[400px]">
             <h3 
             className='text-3xl font-bold text-center sm:text-left sm:mt-12'>Meet Our Chefs</h3>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center'>
@@ -42,7 +42,7 @@ const Chefs = () => {
                     ChefData.map((data) => {
                         return (
                             <motion.div 
-                            variants={SlideUp(data.delay)}
+                            variants={SlideUp(1)}
                             initial="initial"
                             whileInView="animate"
                             key={data.id} className='rounded-md text-center mt-6'> 
@@ -58,6 +58,8 @@ const Chefs = () => {
                 }
             </div>
         </div>
+        </section>
+        
     )
 }
 

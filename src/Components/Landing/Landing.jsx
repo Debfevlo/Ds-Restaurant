@@ -28,7 +28,7 @@ export const SlideUp = (delay) =>{
 
 const Landing = () => {
   return (
-    <main>
+    <section>
         <div className='container flex min-h-[600px] justify-center '>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-12 place-items-center justify-between mt-14 md:mt-0'>
             {/* text section here  */}
@@ -92,7 +92,7 @@ const Landing = () => {
             </div>
             </div>
         </div>
-    </main>
+    </section>
   )
 }
 
